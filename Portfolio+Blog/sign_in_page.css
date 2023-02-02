@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://assets.nflxext.com/ffe/siteui/vlv3/1ecf18b2-adad-4684-bd9a-acab7f2a875f/2dd3fa9a-ecbf-47f7-aafb-12f50e6c1dea/NL-en-20230116-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    color: white;
+}
+
+/* -------------Logo---------------- */
+
+.logo {
+    position: absolute;
+    top: 30;
+    left: 40;
+}
+
+.logo img {
+    width: 14%;
+}
+
+/* ---------------Sign In Form----------------- */
+
+.container {
+    margin-block: 100px;
+    border-radius: 5px;
+    margin-inline: auto;
+    width: 40%;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container h2 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 10px;
+    width: 100%;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(78, 78, 78, 0.8);
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+input[type="text"]::placeholder,
+input[type="password"]::placeholder {
+    color: white;
+    font-weight: bold;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: 'Poppins', cursive;
+    font-weight: bold;
+    background-color: red;
+    color: white;
+    border-radius: 5px;
+    margin-block: 20px;
+    border: none;
+    cursor: pointer;
+}
+
+.help {
+    display: flex;
+    justify-content: space-between;
+    color: #737373;
+    font-weight: bold;
+    margin-bottom: 60px;
+}
+
+.help a {
+    color: #737373;
+    text-decoration: none;
+    font-family: 'Poppins', cursive;
+}
+
+.help a:hover {
+    text-decoration: underline;
+}
+
+.learnMore {
+    color: #737373;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.learnMore a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.learn,
+.learn a {
+    font-size: 16px;
+}
+
+.learn a {
+    color: blue;
+    font-weight: 200;
+}
+
+.learn a:hover,
+.learnMore a:hover {
+    text-decoration: underline;
+}
+
+/* -----------Responsiveness----------- */
+
+@media(max-width:600px) {
+
+    /* -------------Logo---------------- */
+
+    .logo img {
+        width: 30%;
+    }
+
+    /* ---------------Sign In Form----------------- */
+
+    .container {
+        margin-inline: auto;
+        width: 90%;
+        padding-inline: 60px;
+    }
+}
+
+@media(min-width:600px)and (max-width:768px) {
+
+    /* -------------Logo---------------- */
+
+    .logo img {
+        width: 30%;
+    }
+
+    /* ---------------Sign In Form----------------- */
+
+    .container {
+        margin-inline: auto;
+        width: 60%;
+        padding-inline: 60px;
+    }
+
+}
+
+@media(min-width:768px)and (max-width:992px) {
+
+    /* ---------------Sign In Form----------------- */
+
+    .container {
+        margin-inline: auto;
+        width: 60%;
+        padding-inline: 60px;
+    }
+
+}
+
+@media(min-width:992px)and (max-width:1200px) {
+
+     /* ---------------Sign In Form----------------- */
+
+     .container {
+        margin-inline: auto;
+        width: 60%;
+        padding-inline: 60px;
+    }
+}

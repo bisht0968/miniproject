@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Baloo Bhaijaan 2', cursive;
+    background-color: rgba(53, 53, 52, 1);
+    font-weight: bold;
+}
+
+h1 {
+    color: rgb(193, 193, 193);
+    text-align: center;
+    margin: 20px 0;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+.clock {
+    height: 400px;
+    width: 60%;
+    background-color: black;
+    margin: 0px auto;
+    border-radius: 40px;
+    color: rgb(137, 132, 132);
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 80px;
+    flex-direction: column;
+    border: 7px solid rgb(209, 209, 209);
+}
+
+#time {
+    display: flex;
+}
+
+hr {
+    background-color: black;
+    width: 100%;
+}

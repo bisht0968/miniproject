@@ -1,0 +1,420 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: black;
+    height: auto;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    width: auto;
+}
+
+/* --------------main---------- */
+
+/* ------------navbar--------- */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 32px;
+    flex-wrap: wrap;
+}
+
+.left {
+    flex-basis: 35%;
+    font-size: 43px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.left span {
+    color: red;
+}
+
+.right {
+    margin-right: 87;
+}
+
+.right ul {
+    flex-basis: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+    list-style: none;
+    font-size: 16px;
+}
+
+.right ul a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.right ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    bottom: -6px;
+    left: 0;
+    transition: width 0.3s;
+}
+
+.right ul a:hover::after {
+    width: 100%;
+}
+
+.right ul a:hover {
+    color: red;
+}
+
+#cross,
+#hamburger {
+    display: none;
+}
+
+/* --------------heading---------- */
+.name {
+    width: 72%;
+    margin: 40px auto;
+    height: 500px;
+    padding: 10% 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.name-left {
+    flex-basis: 55%;
+}
+
+.name-right {
+    flex-basis: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.name-right i {
+    font-size: 150px;
+}
+
+.name h2 {
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+
+.name h1 {
+    font-size: 40px;
+}
+
+.name h1 span {
+    color: red;
+}
+
+/* ----------About---------- */
+
+#about {
+    width: 72%;
+    margin: auto;
+    height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
+    gap: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about-left {
+    border-radius: 20px;
+}
+
+.about-left img {
+    border-radius: 10px;
+    width: 100%;
+}
+
+.about-right {
+    margin-top: -100px;
+    flex-basis: 60%;
+}
+
+.about-right h2 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+/* --------------titles---------------- */
+.titles {
+    margin-top: 30px;
+}
+
+.titles ul {
+    display: flex;
+    justify-content: flex-start;
+    gap: 30px;
+    list-style: none;
+}
+
+.titles ul a {
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+.titles ul a::after {
+    content: '';
+    width: 0;
+    position: absolute;
+    height: 3px;
+    bottom: -6px;
+    left: 0;
+    background: #ff004f;
+    transition: width 0.3s;
+}
+
+.titles ul a:hover::after {
+    width: 100%;
+}
+
+/* -------------title-inof----------- */
+
+.title-info {
+    position: relative;
+}
+
+.none {
+    display: none;
+}
+
+.skills,
+.education,
+.experience {
+    margin: 20px 0;
+}
+
+.skills ul,
+.education ul,
+.experience ul {
+    list-style: none;
+}
+
+.skills ul li span,
+.education ul li span,
+.experience ul li span {
+    color: #b20139;
+    font-size: 14px;
+}
+
+.education,
+.skills,
+.experience {
+    position: absolute;
+}
+
+/* ---------------------Portfolio---------------- */
+
+#portfolio {
+    width: 90%;
+    margin: auto;
+    max-height: 2000px;
+    display: flex;
+    flex-direction: column;
+}
+
+#portfolio h1 {
+    margin-left: 112px;
+    font-size: 50px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+.project-container {
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    margin-inline: 35px;
+}
+
+.subProjectContainer {
+    background-color: rgb(31, 31, 31);
+    width: 300px;
+    height: 250px;
+    margin-top: 70px;
+    border-radius: 10px;
+    justify-content: center;
+    padding: 0 20px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    transition: background-color 0.5s;
+    position: relative;
+    transition: transform 0.3s;
+}
+
+.subProjectContainer i {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.subProjectContainer p,
+.subProjectContainer a {
+    font-size: 10px;
+}
+
+.subProjectContainer a {
+    text-decoration: none;
+    color: white;
+}
+
+.subProjectContainer:hover {
+    cursor: pointer;
+    background-color: rgb(209, 1, 1);
+    transform: scale(1.1, 1.1);
+}
+
+button {
+    width: 20%;
+    padding: 12px 10px;
+    margin: 20px auto;
+    background-color: red;
+    color: white;
+    border-radius: 12px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: red;
+}
+
+.noneSeeMore {
+    display: none;
+}
+
+.upcoming,
+.visit {
+    font-size: 12px;
+}
+
+/* -----------Contact Form--------- */
+
+#contact {
+    width: 90%;
+    margin: auto;
+}
+
+.contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#contact h1 {
+    margin-left: 100px;
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.leftContactContainer {
+    flex-basis: 35%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    padding-inline: 100px;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.leftContactContainer span {
+    font-size: 30px;
+    color: red;
+    margin: 20px 0 10px 0;
+}
+
+.logo {
+    margin-top: 10px;
+}
+
+.logo i {
+    color: #ff004f;
+    padding: 5px;
+    transition: transform 0.2s;
+}
+
+.logo i:hover {
+    transform: scale(1.2, 1.2);
+}
+
+.rightContactContainer {
+    flex-basis: 60%;
+    padding: 40px;
+}
+
+.rightContactContainer h2 {
+    font-weight: 300;
+}
+
+.rightContactContainer input,
+.rightContactContainer textarea {
+    width: 100%;
+    background-color: rgb(31, 31, 31);
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    margin: 10px 0;
+}
+
+.rightContactContainer input::placeholder,
+.rightContactContainer textarea::placeholder {
+    color: white;
+}
+
+#btn {
+    width: 40%;
+    font-size: 14px;
+    padding: 10px 3px;
+    border-radius: 15px;
+    transition: background-color 0.3s;
+}
+
+#btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: red;
+}
+
+#formSumbmittedMessage {
+    text-align: center;
+    margin-top: 20px;
+    background-color: rgb(3, 60, 4);
+}
+
+/* -------------Footer------------ */
+
+.copyright {
+    text-align: center;
+    background-color: rgb(31, 31, 31);
+    height: 40px;
+    padding: 10px;
+    font-size: 10px;
+}
