@@ -1,0 +1,231 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Clone</title>
+    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="home_responsiveness.css">
+</head>
+
+<body>
+
+    <!-- header section -->
+
+    <section>
+        <div class="container">
+            <div class="header flex">
+                <div class="netflix-logo">
+                    <img src="./Images/asset 1.octet-stream" alt="Netflix Logo">
+                </div>
+                <div class="header-right flex">
+                    <div class="dropdown-box"><i class="fa-solid fa-globe"></i>
+                        <label for="dropdown" class="dropdown">
+                            <select name="dropdown" id="dropdown">
+                                <option value="English">English</option>
+                                <option value="Netherland">Netherland</option>
+                            </select>
+                        </label>
+                    </div>
+                    <a href="#" class="bttn">Sign In</a>
+                </div>
+            </div>
+
+            <!--  Email Section  -->
+
+            <div class="heading flex">
+                <h1>Unlimited films, TV programmes and more.</h1>
+                <p>Watch anywhere. Cancel at any time.</p>
+                <p>Ready to watch? Enter your email to create or restart your membership.</p>
+                <div class="email"><input id="email" type="email" placeholder="Email Address"><a href="" class="bttn2"
+                        onclick="reset()">Get
+                        Started <i class="fa-solid fa-arrow-right"></i></a></div>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Ad Section 1-->
+
+    <section>
+        <div class="container2 flex">
+            <div class="left ">
+                <h1>Enjoy on your TV.</h1>
+                <p>Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and more.</p>
+            </div>
+            <div class="right pos"><img
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/tv.png"
+                    alt="Tv Image"><video data-uia="our-story-card-video" autoplay="" playsinline="" muted="" loop="">
+                    <source
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-0819.m4v"
+                        type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Ad Section 2-->
+
+    <section>
+        <div class="container2 flex">
+            <div class="left"><img
+                    src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/mobile-0819.jpg"
+                    alt="Tv Image"></div>
+            <div class="right">
+                <h1>Download your programmes to watch offline.</h1>
+                <p>Save your favourites easily and always have something to watch.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Ad Section 3-->
+
+    <section>
+        <div class="container2 flex">
+            <div class="left">
+                <h1>Watch everywhere.</h1>
+                <p>Stream unlimited films and TV programmes on your phone, tablet, laptop and TV without paying more.
+                </p>
+            </div>
+            <div class="right pos1">
+                <img src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/device-pile.png"
+                    alt="Image"><video data-uia="our-story-card-video" autoplay="" playsinline="" muted="" loop="">
+                    <source
+                        src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices.m4v"
+                        type="video/mp4" />
+                </video>
+            </div>
+        </div>
+    </section>
+    <hr>
+
+
+
+    <!-- Ad Section 4-->
+
+    <section>
+        <div class="container2 flex">
+            <div class="left">
+                <img src="https://occ-0-2774-2773.1.nflxso.net/dnm/api/v6/19OhWN2dO19C9txTON9tvTFtefw/AAAABfpnX3dbgjZ-Je8Ax3xn0kXehZm_5L6-xe6YSTq_ucht9TI5jwDMqusWZKNYT8DfGudD0_wWVVTFLiN2_kaQJumz2iivUWbIbAtF.png?r=11f"
+                    alt="Image">
+            </div>
+            <div class="right">
+                <h1>Create profiles for children.</h1>
+                <p>Send children on adventures with their favourite characters in a space made just for them - free with
+                    your membership.</p>
+            </div>
+        </div>
+    </section>
+    <hr>
+    <!-- FAQ -->
+
+    <section>
+        <div id="container3" class="container3 flex">
+            <h1>Frequently Asked Questions</h1>
+            <div class="ques flex" onclick="extra()">
+                What can I watch on Netflix?
+                <div class="plus-icon">+
+                </div>
+            </div>
+            <div id="ques1" class="display-content none">
+                <h2>Netflix has an extensive library of feature films, documentaries, TV programmes, anime,
+                    award-winning Netflix originals and more. Watch as much as you want, anytime you want.</h2>
+            </div>
+            <div class="ques flex " onclick="extra1()">What is Netflix?<div class="plus-icon">+</div>
+            </div>
+            <div id="ques2" class="display-content none">
+                <h2>Netflix is a streaming service that offers a wide variety of award-winning TV programmes, films,
+                    anime, documentaries and more – on thousands of internet-connected devices. <br>
+                    You can watch as much as you want, whenever you want, without a single advert – all for one low
+                    monthly price. There's always something new to discover, and new TV programmes and films are added
+                    every week!</h2>
+            </div>
+            <div class="ques flex " onclick="extra2()">How much does Netflix cost?<div class="plus-icon">+
+                </div>
+            </div>
+            <div id="ques3" class="display-content none">
+                <h2>Watch Netflix on your smartphone, tablet, smart TV, laptop or streaming device, all for one fixed
+                    <br>
+                    monthly fee. Plans range from €7,99 to €15,99 a month. No extra costs, no contracts.
+                </h2>
+            </div>
+            <div class="ques flex " onclick="extra3()">Where can I watch?<div class="plus-icon">+</div>
+            </div>
+            <div id="ques4" class="display-content none">
+                <h2>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at
+                    netflix.com from your personal computer or on any internet-connected device that offers the Netflix
+                    app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+                    <br>
+                    You can also download your favourite programmes with the iOS, Android, or Windows 10 app. Use
+                    downloads to watch while you're on the go and without an internet connection. Take Netflix with you
+                    anywhere.
+                </h2>
+            </div>
+            <div class="ques flex " onclick="extra4()">How do I cancel?<div class="plus-icon">+</div>
+            </div>
+            <div id="ques5" class="display-content none">
+                <h2>Netflix is flexible. There are no annoying contracts and no commitments. You can easily cancel your
+                    account online in two clicks. There are no cancellation fees – start or stop your account at any
+                    time.</h2>
+            </div>
+            <div class="ques flex " onclick="extra5()">Is Netflix good for children?<div class="plus-icon">+
+                </div>
+            </div>
+            <div id="ques6" class="display-content none">
+                <h2>The Netflix Children's experience is included in your membership to give parents control while
+                    children enjoy family-friendly TV programmes and films in their own space.
+                    <br>
+                    Children's profiles come with PIN-protected parental controls that let you restrict the maturity
+                    rating of content children can watch and block specific titles you don’t want children to see.
+                </h2>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Email Section -->
+    <section>
+        <div class="footer-email flex container4">
+            <p>Ready to watch? Enter your email to create or restart your membership.</p>
+            <div class="email"><input id="email2" type="email" placeholder="Email Address"><a href="#" class="bttn2" onclick="reset()">Get
+                    Started <i class="fa-solid fa-arrow-right"></i></a></div>
+        </div>
+    </section>
+    <hr>
+
+    <!-- Footer -->
+
+    <section>
+        <div class="container5">
+            <p>Questions? Call <a href="#">0800 020 1573</a></p>
+            <div class="boxes flex">
+                <div class="box-type flex"><a href="#">FAQ</a><a href="#">Investors Relation</a><a href="#">Ways to
+                        Watch</a><a href="#">Corporate Information</a><a href="#">Legal Notices</a></div>
+                <div class="box-type flex"><a href="#">Help Centre</a><a href="#">Jobs</a><a href="#">Terms of Use</a><a
+                        href="#">Contact Us</a><a href="#">Only on Netflix</a></div>
+                <div class="box-type flex"><a href="#">Account</a><a href="#">Redeem gifts cards</a><a
+                        href="#">Privacy</a><a href="#">Speed Test</a></div>
+                <div class="box-type flex"><a href="#">Media Centre</a><a href="#">Buy gift cards</a><a href="#">Cookie
+                        Preferences</a><a href="#">Legal Guarantee</a></div>
+            </div>
+
+            <!-- END -->
+
+            <label for="dropdown2" class="dropdown2">
+                <select name="dropdown2" id="dropdown2">
+                    <option value="English">English</option>
+                    <option value="Netherland">Netherland</option>
+                </select>
+            </label>
+            <div class="end">Netflix India</div>
+        </div>
+    </section>
+
+    <!-- ----------JS------------ -->
+    <script src="home.js"></script>
+    <script src="https://kit.fontawesome.com/9c6d41287f.js" crossorigin="anonymous"></script>
+</body>
+
+</html>

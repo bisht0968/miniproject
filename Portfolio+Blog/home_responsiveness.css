@@ -1,0 +1,262 @@
+@media (max-width: 600px) {
+    .bttn {
+        width: 46%;
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .container {
+        width: 280%;
+        height: 800px;
+    }
+
+    .heading h1 {
+        margin-inline: 50px;
+    }
+
+    hr {
+        width: 280%;
+    }
+
+    .container2 {
+        width: 280%;
+        padding-top: 30px;
+        height: 800px;
+        padding-inline: 100px;
+        background-color: #000000;
+        justify-content: space-evenly;
+        text-align: center;
+        gap: 0;
+        flex-wrap: wrap;
+    }
+
+    .container2 h1 {
+        font-size: 50px;
+    }
+
+    .container2 p {
+        width: 100%;
+    }
+
+    .container3 {
+        width: 280%;
+        max-height: 3000px;
+        background-color: #000000;
+        justify-content: space-evenly;
+        text-align: center;
+        padding-bottom: 35px;
+    }
+
+    .container4 {
+        background-color: #000000;
+        justify-content: space-evenly;
+        height: 300px;
+        padding-top: 35px;
+        width: 280%;
+    }
+
+    .container4 p {
+        font-size: 30px;
+        padding-inline: 50px;
+        text-align: center;
+    }
+
+    .container5 {
+        width: 280%;
+        height: 700px;
+        background-color: #000000;
+    }
+
+    .box-type a {
+        font-size: 20px;
+    }
+
+    .box-type {
+        flex-wrap: wrap;
+    }
+
+    .boxes {
+        justify-content: space-between;
+    }
+}
+
+@media(min-width:600px) and (max-width:768px) {
+    .container {
+        height: 550px;
+    }
+
+    .heading h1 {
+        margin: 0 auto;
+        font-size: 40px;
+        font-weight: 900;
+    }
+
+    .heading p {
+        font-size: 16px;
+    }
+
+    .container2 {
+        justify-content: center;
+        align-content: flex-start;
+        text-align: center;
+        height: 600px;
+        flex-wrap: wrap;
+        padding-inline: 50px;
+    }
+
+    .container2 h1 {
+        font-size: 34px;
+        margin-top: 30px;
+    }
+
+    .container2 p {
+        width: 100%;
+        margin-top: 0;
+        font-size: 18px;
+    }
+
+    .container3 {
+        max-height: 3000px;
+    }
+
+    .display-content{
+        width:80%;
+    }
+
+    .container3 h1 {
+        font-size: 34px;
+    }
+
+    .ques {
+        width: 80%;
+        font-size: 19px;
+    }
+
+    .container4 {
+        padding-top: 30px;
+        padding-inline: 30px;
+        height: 200px;
+        text-align: center;
+    }
+
+    .container4 p {
+        margin-bottom: 12px;
+    }
+
+
+    .container5 {
+        height: 396px;
+    }
+
+    .container5 p {
+        padding: 40px 100px;
+    }
+
+    .boxes {
+        margin: 0 100px;
+    }
+
+    .box-type a{
+        font-size: 12px;
+    }
+
+    .dropdown2 select {
+        width: 20%;
+        margin: 50px 100px;
+        margin-bottom: 5px;
+    }
+
+    .end {
+        padding: 10px 100px;
+    }
+}
+
+@media(min-width:768px)and (max-width:992px) {
+    .heading h1 {
+        margin: 0 auto;
+    }
+
+    .container2 {
+        justify-content: space-evenly;
+        text-align: center;
+        height: 700px;
+        flex-wrap: wrap;
+    }
+
+    .container2 h1 {
+        font-size: 44px;
+    }
+
+    .container2 p {
+        width: 100%;
+        font-size: 24px;
+    }
+
+    .container3 {
+        max-height: 2500px;
+    }
+
+    .container3 h1 {
+        font-size: 40px;
+    }
+
+    .ques {
+        font-size: 20px;
+    }
+
+    .container4 {
+        height: 150px;
+    }
+
+    .container5 {
+        height: 600px;
+    }
+
+    .container5 p {
+        padding: 100px 100px;
+    }
+
+    .boxes {
+        margin: 0 100px;
+    }
+
+    .dropdown2 select {
+        margin: 50px 100px;
+        margin-bottom: 5px;
+    }
+
+    .end {
+        padding: 10px 100px;
+    }
+}
+
+@media (min-width:992px)and (max-width:1200px) {
+    .container2 {
+        height: 500px;
+        gap: 40px
+    }
+
+    .container2 img {
+        width: 300px;
+    }
+
+    .container2 p {
+        width: 100%;
+        font-size: 20px;
+    }
+
+    .container2 h1 {
+        font-size: 40px;
+    }
+
+    .container3 {
+        max-height: 1000px;
+    }
+
+    .container4 {
+        height: 150px;
+    }
+    .container5{
+        height:511px;
+    }
+}
